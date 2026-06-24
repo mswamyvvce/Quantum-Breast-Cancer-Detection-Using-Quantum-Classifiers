@@ -182,15 +182,95 @@ The following metrics are reported:
 
 ## Expected Results
 
-| Model         | Expected Accuracy |
-| ------------- | ----------------- |
-| Classical SVM | 94–98%            |
-| VQC           | 90–97%            |
-| QSVM          | 95–98%            |
+============================================================
+Loading Breast Cancer Dataset
+============================================================
+Original Shape: (569, 30)
+Reduced Shape: (569, 4)
+Train Samples: 455
+Test Samples : 114
+WARNING:qiskit_machine_learning.neural_networks.sampler_qnn:No gradient function provided, creating a gradient function. If your Sampler requires transpilation, please provide a pass manager.
+======================================================================
+BREAST CANCER DATASET
+======================================================================
+Original Shape : (569, 30)
+Reduced Shape : (569, 4)
+Training Samples : 455
+Testing Samples  : 114
 
-Actual results may vary depending on simulator settings and preprocessing parameters.
 
----
+======================================================================
+CLASSICAL SUPPORT VECTOR MACHINE
+======================================================================
+Accuracy : 96.49 %
+
+Classification Report
+              precision    recall  f1-score   support
+
+           0       0.95      0.95      0.95        42
+           1       0.97      0.97      0.97        72
+
+    accuracy                           0.96       114
+   macro avg       0.96      0.96      0.96       114
+weighted avg       0.96      0.96      0.96       114
+
+
+
+======================================================================
+VARIATIONAL QUANTUM CLASSIFIER
+======================================================================
+Training VQC...
+Accuracy : 70.18 %
+
+Classification Report
+              precision    recall  f1-score   support
+
+           0       0.79      0.26      0.39        42
+           1       0.69      0.96      0.80        72
+
+    accuracy                           0.70       114
+   macro avg       0.74      0.61      0.60       114
+weighted avg       0.73      0.70      0.65       114
+
+
+
+======================================================================
+QUANTUM SUPPORT VECTOR MACHINE
+======================================================================
+Training QSVM...
+Accuracy : 86.84 %
+
+Classification Report
+              precision    recall  f1-score   support
+
+           0       0.86      0.76      0.81        42
+           1       0.87      0.93      0.90        72
+
+    accuracy                           0.87       114
+   macro avg       0.87      0.85      0.85       114
+weighted avg       0.87      0.87      0.87       114
+
+
+
+======================================================================
+MODEL COMPARISON
+======================================================================
+SVM  Accuracy : 0.9649
+VQC  Accuracy : 0.7018
+QSVM Accuracy : 0.8684
+
+Results saved in results/ folder
+
+Generated Files:
+results/svm_confusion_matrix.png
+results/vqc_confusion_matrix.png
+results/qsvm_confusion_matrix.png
+results/accuracy_comparison.png
+results/model_accuracy.csv
+
+Project Completed Successfully.
+
+Results Saved Successfully.
 
 ## Applications
 
@@ -238,4 +318,4 @@ Mahadevaswamy S
 
 Department of Electronics and Communication Engineering
 
-Vidyavardhaka College of Engineering, Mysuru, India
+Vidyavardhaka College of Engineering, Mysuru, Karnataka, India
