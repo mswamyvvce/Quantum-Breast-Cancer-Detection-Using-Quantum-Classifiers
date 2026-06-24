@@ -189,7 +189,7 @@ Original Shape: (569, 30)
 Reduced Shape: (569, 4)
 Train Samples: 455
 Test Samples : 114
-WARNING:qiskit_machine_learning.neural_networks.sampler_qnn:No gradient function provided, creating a gradient function. If your Sampler requires transpilation, please provide a pass manager.
+
 ======================================================================
 BREAST CANCER DATASET
 ======================================================================
@@ -197,7 +197,6 @@ Original Shape : (569, 30)
 Reduced Shape : (569, 4)
 Training Samples : 455
 Testing Samples  : 114
-
 
 ======================================================================
 CLASSICAL SUPPORT VECTOR MACHINE
@@ -279,9 +278,7 @@ Results Saved Successfully.
 * Quantum Machine Learning Research
 * Healthcare Decision Support Systems
 * Quantum-Enhanced Disease Classification
-
 ---
-
 ## Future Enhancements
 
 * Noise-aware quantum learning
@@ -289,9 +286,7 @@ Results Saved Successfully.
 * Explainable quantum classification
 * Multi-class disease diagnosis
 * Cross-simulator benchmarking using Qiskit, PennyLane, and Cirq
-
 ---
-
 ## Citation
 
 If you use this work in your research, please cite:
@@ -303,9 +298,7 @@ If you use this work in your research, please cite:
   year={2026}
 }
 ```
-
 ---
-
 ## License
 
 This project is distributed under the MIT License.
