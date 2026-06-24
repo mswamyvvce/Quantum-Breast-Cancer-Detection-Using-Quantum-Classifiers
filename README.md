@@ -236,6 +236,6 @@ This project is distributed under the MIT License.
 
 Mahadevaswamy S
 
-Department of Artificial Intelligence and Machine Learning
+Department of Electronics and Communication Engineering
 
 Vidyavardhaka College of Engineering, Mysuru, India
